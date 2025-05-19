@@ -1,0 +1,5 @@
+wealthmind-fx-site/
+├── index.html      <-- paste that HTML code here
+├── style.css       <-- paste that CSS code here
+└── assets/
+    └── background.jpg  <-- the dark luxury trading background image I’m generating for you
