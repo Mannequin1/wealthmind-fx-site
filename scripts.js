@@ -1,4 +1,4 @@
-// Smooth scroll for 'Enter the Zone' button on homepage
+// Smooth redirect for 'Enter the Zone' button on homepage
 document.addEventListener('DOMContentLoaded', () => {
   const ctaBtn = document.querySelector('.cta-button');
   if(ctaBtn) {
