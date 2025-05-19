@@ -1,25 +1,15 @@
-function login() {
-  const user = document.getElementById("username").value;
-  const pass = document.getElementById("password").value;
-  const error = document.getElementById("login-error");
-
-  // Simple demo validation
-  if (user === "phantom" && pass === "x123") {
-    localStorage.setItem("loggedIn", "true");
-    window.location.href = "dashboard.html";
-  } else {
-    error.textContent = "Invalid credentials. Try again.";
+// Smooth scroll for 'Enter the Zone' button on homepage
+document.addEventListener('DOMContentLoaded', () => {
+  const ctaBtn = document.querySelector('.cta-button');
+  if(ctaBtn) {
+    ctaBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.location.href = 'login.html';
+    });
   }
-}
 
-function checkAuth() {
-  const loggedIn = localStorage.getItem("loggedIn");
-  if (!loggedIn) {
-    window.location.href = "login.html";
+  // Simple welcome alert on dashboard
+  if(window.location.pathname.endsWith('dashboard.html')) {
+    alert('Welcome back, Trader. Stay sharp.');
   }
-}
-
-function logout() {
-  localStorage.removeItem("loggedIn");
-  window.location.href = "login.html";
-}
+});
