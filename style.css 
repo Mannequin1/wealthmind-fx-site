@@ -1,157 +1,64 @@
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
+  margin: 0;
+  background-color: #0a0a0a;
+  color: #eeeeee;
   font-family: 'Poppins', sans-serif;
-  background: #0a0a0a;
-  color: #eee;
-  line-height: 1.6;
 }
 
-a {
-  color: #7afff2;
-  text-decoration: none;
-}
-
-.nav-container {
+header {
+  background-color: #111111;
+  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
-  padding: 1.5rem 3rem;
-  background: #111;
   align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
 }
 
 .logo {
-  font-weight: 700;
-  font-size: 1.8rem;
-  letter-spacing: 2px;
-  color: #7afff2;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
-}
-
-.nav-links li a:hover {
+  font-size: 1.5rem;
+  font-weight: 600;
   color: #00ffe0;
+}
+
+nav a {
+  margin-left: 2rem;
+  text-decoration: none;
+  color: #eeeeee;
+  font-weight: 300;
 }
 
 .hero {
-  background: url('assets/hero-bg.jpg') center center/cover no-repeat;
-  height: 90vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: linear-gradient(to bottom right, #0a0a0a, #1a1a1a);
   text-align: center;
-  padding: 0 2rem;
+  padding: 5rem 2rem;
 }
 
-.hero-content h1 {
+.hero h1 {
   font-size: 3rem;
-  margin-bottom: 1rem;
   color: #00ffe0;
-  text-shadow: 0 0 8px #00ffe0;
+  margin-bottom: 1rem;
 }
 
-.hero-content p {
-  font-size: 1.3rem;
-  margin-bottom: 2rem;
-  opacity: 0.8;
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
 }
 
-.btn-primary {
-  background: #00ffe0;
-  color: #000;
-  padding: 0.8rem 2.5rem;
-  font-weight: 700;
+.cta-button {
+  margin-top: 2rem;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0a0a0a;
+  background-color: #00ffe0;
   border: none;
-  border-radius: 50px;
+  border-radius: 5px;
   cursor: pointer;
   transition: background 0.3s ease;
 }
 
-.btn-primary:hover {
-  background: #00ccae;
-}
-
-.features {
-  padding: 5rem 3rem;
-  text-align: center;
-  background: #111;
-}
-
-.features h2 {
-  font-size: 2.5rem;
-  margin-bottom: 3rem;
-  color: #7afff2;
-}
-
-.feature-list {
-  display: flex;
-  justify-content: center;
-  gap: 4rem;
-  flex-wrap: wrap;
-}
-
-.feature-item {
-  max-width: 300px;
-}
-
-.feature-item img {
-  width: 80px;
-  margin-bottom: 1.2rem;
-  filter: invert(85%) sepia(40%) saturate(600%) hue-rotate(160deg) brightness(120%);
-}
-
-.feature-item h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.8rem;
-  color: #00ffe0;
-}
-
-.signup {
-  background: #000;
-  padding: 4rem 3rem;
-  text-align: center;
-}
-
-.signup h2 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-  color: #7afff2;
-}
-
-.signup form {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.signup input[type="email"] {
-  padding: 1rem;
-  font-size: 1.2rem;
-  border-radius: 50px;
-  border: none;
-  width: 300px;
-}
-
-.signup button {
-  font-size: 1.2rem;
-  padding: 1rem 2rem;
-  border-radius: 50px;
-}
-
-footer {
-  text-align: center;
-  padding: 2rem;
-  background: #111;
-  font-size: 0.9rem;
-  color: #666;
+.cta-button:hover {
+  background-color: #00ccb8;
 }
