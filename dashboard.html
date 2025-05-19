@@ -1,30 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Dashboard | WealthMind FX</title>
-  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
 </head>
-<body onload="checkAuth()">
+<body>
   <header>
     <div class="logo">WealthMind FX</div>
     <nav>
-      <a href="#" onclick="logout()">Logout</a>
+      <a href="index.html">Home</a>
+      <a href="login.html">Logout</a>
     </nav>
   </header>
 
-  <section class="dashboard">
-    <h1>Welcome back, sniper.</h1>
-    <p>Your trading zone is live.</p>
+  <main class="dashboard-container">
+    <h1>Welcome back, Trader.</h1>
+    <section class="dashboard-widgets">
+      <div class="widget">
+        <h2>Market Overview</h2>
+        <p>EUR/USD: 1.1023 +0.23%</p>
+        <p>Gold (XAU/USD): 3198.45 -0.15%</p>
+        <p>Dow Jones: 34678 +0.5%</p>
+      </div>
 
-    <!-- Embed TradingView Widget (Optional) -->
-    <div class="chart-widget">
-      <iframe src="https://www.tradingview.com/widgetembed/?frameElementId=tradingview_12345"
-              width="100%" height="400" frameborder="0"></iframe>
-    </div>
-  </section>
+      <div class="widget">
+        <h2>Your Watchlist</h2>
+        <ul>
+          <li>EUR/USD</li>
+          <li>USD/JPY</li>
+          <li>XAU/USD</li>
+          <li>NASDAQ 100</li>
+        </ul>
+      </div>
 
-  <script src="scripts/auth.js"></script>
+      <div class="widget">
+        <h2>Recent Alerts</h2>
+        <ul>
+          <li>EUR/USD broke resistance at 1.1015</li>
+          <li>Gold approaching support zone 3180</li>
+          <li>Dow Jones testing new high</li>
+        </ul>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
