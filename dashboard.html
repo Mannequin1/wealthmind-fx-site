@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | WealthMind FX</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body onload="checkAuth()">
+  <header>
+    <div class="logo">WealthMind FX</div>
+    <nav>
+      <a href="#" onclick="logout()">Logout</a>
+    </nav>
+  </header>
+
+  <section class="dashboard">
+    <h1>Welcome back, sniper.</h1>
+    <p>Your trading zone is live.</p>
+
+    <!-- Embed TradingView Widget (Optional) -->
+    <div class="chart-widget">
+      <iframe src="https://www.tradingview.com/widgetembed/?frameElementId=tradingview_12345"
+              width="100%" height="400" frameborder="0"></iframe>
+    </div>
+  </section>
+
+  <script src="scripts/auth.js"></script>
+</body>
+</html>
